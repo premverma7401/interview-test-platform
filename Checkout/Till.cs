@@ -92,6 +92,26 @@ namespace Checkout
             return 0;
         }
 
+        // Generic way to Calculate for any item
+        //  public double AddAnyItem(string numberItems, double UnitAmount, int specialOnItems, double specialAmount, int maxItemLimit)
+        //         {
+        //             double items = double.Parse(numberItems);
+
+        //             if (items == 0) return 0;
+        //             if (items > maxItemLimit) return 0;
+        //             if (specialOnItems > 1)
+        //             {
+        //             var discountPrice = specialAmount / specialOnItems;
+        //             var pairs = 2*(Math.Floor(items / specialOnItems));
+        //             var remainingItems = items - pairs;
+
+        //                 return (pairs * discountPrice) + (remainingItems * UnitAmount);
+        //             }
+        //             else
+        //             {
+        //                 return UnitAmount * items;
+        //             }
+        //         }
         // item quantity
         public void Scan(string items)
         {
